@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  postgres:
+    image: docker6
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: school
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: admin
