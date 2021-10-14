@@ -1,7 +1,7 @@
 version: "3.7"
 services:
-  postgres:
-    image: docker6
+    image: postgres:alpine
+    container_name: container
     ports:
       - "5432:5432"
     environment:
