@@ -24,3 +24,10 @@ create table if not exists posts
     user_id UUID,
     foreign key (user_id) references users(id) on delete cascade
 );
+
+create table if not exists friends
+(
+    foreign key (user_id) references users (id) on delete cascade,
+    foreign key (friend_id) references users (id) on delete cascade,
+    primary key (user_id, friend_id)
+);
