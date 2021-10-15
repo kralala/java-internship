@@ -9,3 +9,5 @@ services:
       POSTGRES_DB: schooldb
       POSTGRES_USER: user
       POSTGRES_PASSWORD: pass
+    volumes:
+      - ./V1__init_schema.sql:/docker-entrypoint-initdb.d/V1__init_schema.sql
