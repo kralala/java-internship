@@ -10,9 +10,10 @@ create table if not exists teacher
     id UUID not null primary key,
     first_name varchar(255) not null,
     family_name varchar(255) not null,
-    patronymic varchar(255) not null,
+    patronymic varchar(255),
     gender varchar(1) not null,
-    age int not null
+    age int not null,
+    school_id UUID references school (id)
 );
 
 create table if not exists student
@@ -20,15 +21,16 @@ create table if not exists student
     id UUID not null primary key,
     first_name varchar(255) not null,
     family_name varchar(255) not null,
-    patronymic varchar(255) not null,
+    patronymic varchar(255),
     gender varchar(1) not null,
-    age int not null
+    age int not null,
+    school_id UUID references school (id)
 );
 
 create table if not exists subject
 (
     id UUID not null primary key,
-    name varchar(255) not null
+    name varchar(255) not null,
 );
 
 create table if not exists teacher_subject
