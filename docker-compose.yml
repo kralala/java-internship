@@ -1,10 +1,11 @@
 version: "3.7"
 services:
+  db:
     image: postgres:alpine
-    container_name: container
+    container_name: p_container
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_DB: school
+      POSTGRES_DB: schooldb
       POSTGRES_USER: user
-      POSTGRES_PASSWORD: admin
+      POSTGRES_PASSWORD: pass
