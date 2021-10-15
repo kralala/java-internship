@@ -3,11 +3,10 @@ version: "3"
 services:
   db:
     image: postgres:alpine
-    container_name: container
-    restart: always
+    container_name: p_container
     environment:
-      - POSTGRES_USER=admin
-      - POSTGRES_PASSWORD=123
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=pass
       - POSTGRES_DB=social_db
     ports:
       - "5432:5432"
