@@ -35,5 +35,10 @@ public class CustomerImpl implements Customer {
     public ArrayList<Order> getOrderList() {
         return orderList;
     }
+    
+    @Override
+    public void setCart(Cart cart) {
+        this.cart = cart;
+    }
 
 }
