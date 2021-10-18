@@ -36,9 +36,4 @@ public class CustomerImpl implements Customer {
         return orderList;
     }
 
-    @Override
-    public void setCart(Cart cart) {
-        this.cart = cart;
-    }
-
 }
