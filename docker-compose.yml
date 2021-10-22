@@ -1,0 +1,13 @@
+version: "3.3"
+services:
+  postgres:
+    image: postgres:alpine
+    container_name: pcont
+    environment:
+      POSTGRES_DB: social
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+    ports:
+      - "5432:5432"
+    volumes:
+      ./V1__init_schema,sql:/docker-entrypoint-initdb.d/V1__init_schema.sql
