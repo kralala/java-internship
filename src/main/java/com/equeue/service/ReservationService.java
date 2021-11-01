@@ -6,7 +6,7 @@ import com.equeue.entity.User;
 import com.equeue.mapper.Mapper;
 import com.equeue.persistence.ReservationRepository;
 import com.equeue.persistence.UserRepository;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class ReservationService {
 
     private final UserRepository userRepository;
