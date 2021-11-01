@@ -14,12 +14,8 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class Reservation extends Identity {
 
-
-    @Temporal(TemporalType.TIMESTAMP)
     private LocalDateTime created;
 
-
-    @Temporal(TemporalType.TIMESTAMP)
     private LocalDateTime arranged;
 
     @ManyToOne
