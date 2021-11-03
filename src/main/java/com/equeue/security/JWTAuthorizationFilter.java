@@ -18,6 +18,7 @@ import java.io.IOException;
 import static org.hibernate.internal.util.StringHelper.isEmpty;
 import static org.springframework.http.HttpHeaders.AUTHORIZATION;
 
+@Component
 @RequiredArgsConstructor
 public class JWTAuthorizationFilter extends OncePerRequestFilter {
 
