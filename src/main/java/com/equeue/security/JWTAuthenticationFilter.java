@@ -19,6 +19,7 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.stream.Collectors;
 
+@Component
 public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
     private final AuthenticationManager authenticationManager;
